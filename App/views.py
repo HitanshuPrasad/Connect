@@ -9,7 +9,7 @@ from datetime import datetime
 # Create your views here.
 
 
-# LOGIN VIEW FOR CLIENT
+# LOGIN VIEW FOR CLIENT BABY
 def login_client(request):
     if request.user.is_authenticated:
         return redirect(home_client)
@@ -25,7 +25,7 @@ def login_client(request):
 
 
 
-# LOGIN VIEW FOR PROFESSIONAL
+# LOGIN VIEW FOR PROFESSIONAL BABY
 def login_professional(request):
     if request.user.is_authenticated:
         return redirect(home_professional)
@@ -39,7 +39,7 @@ def login_professional(request):
     return render(request,'login_professional.html')
 
 
-# CREATE PROFILE AND CLIENT SIGNUP VIEW
+# CREATE PROFILE AND CLIENT SIGNUP VIEW BABY
 def signup_client(request):
     if request.user.is_authenticated:
         return redirect(home_client)
