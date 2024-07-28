@@ -9,7 +9,7 @@ class Professionals(models.Model):
     skills = models.TextField(blank=True)
     profile_picture = models.ImageField( upload_to='profilepics/')
     joining_date= models.DateField()
-    
+    rating = models.IntegerField()
     def __str__(self):
         return self.user.username
     
